@@ -1,7 +1,5 @@
 # scoop-bucket-jover
 
-# scoop-bucket-jover
-
 scoop bucket by jover
 
 **目前有以下应用：**
