@@ -5,13 +5,14 @@
     "description": "百度脑图.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NaoTu/DesktopNaotu/releases/download/v3.2.3/DesktopNaotu-win32-x64.zip"
+            "url": "https://github.com/NaoTu/DesktopNaotu/releases/download/v3.2.3/DesktopNaotu-win32-x64.zip",
+            "extract_dir": "DesktopNaotu-win32-x64"
         },
         "32bit": {
-            "url": "https://github.com/NaoTu/DesktopNaotu/releases/download/v3.2.3/DesktopNaotu-win32-ia32.zip"
+            "url": "https://github.com/NaoTu/DesktopNaotu/releases/download/v3.2.3/DesktopNaotu-win32-ia32.zip",
+            "extract_dir": "DesktopNaotu-win32-ia32"
         }
     },
-    "extract_dir": "DesktopNaotu-win32-x64",
     "bin": [
         "DesktopNaotu.exe"
     ],
