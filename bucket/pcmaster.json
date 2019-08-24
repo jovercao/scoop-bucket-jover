@@ -31,6 +31,10 @@
         [
             "cleanmaster.exe",
             "软媒清理大师"
+        ],
+        [
+            "mytime.exe",
+            "软媒时间"
         ]
     ],
     "checkver": {
