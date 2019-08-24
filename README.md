@@ -4,4 +4,5 @@
 
 **目前有以下应用：**
 
-- [naotu](https://github.com/NaoTu/DesktopNaotu)，脑图桌面版
+- [naotu](https://github.com/NaoTu/DesktopNaotu) - 脑图桌面版
+- [pcmaster](https://mofang.ruanmei.com/) - 软媒魔方

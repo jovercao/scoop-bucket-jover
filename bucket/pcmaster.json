@@ -7,6 +7,10 @@
         "32bit": {
             "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip",
             "extract_dir": "PCMaster"
+        },
+        "64bit": {
+            "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip",
+            "extract_dir": "PCMaster"
         }
     },
     "bin": [
@@ -31,11 +35,14 @@
     ],
     "checkver": {
         "url": "https://mofang.ruanmei.com/",
-        "regex": "版本：([\\d.]+)正式版"
+        "regex": "pcmaster_([\\d.]+)_full\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "32bit": {
+                "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
+            },
+            "64bit": {
                 "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
             }
         }
