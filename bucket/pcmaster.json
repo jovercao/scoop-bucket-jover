@@ -1,0 +1,43 @@
+{
+    "homepage": "https://mofang.ruanmei.com",
+    "version": "6.21",
+    "license": "GPL",
+    "description": "软媒魔方.",
+    "architecture": {
+        "32bit": {
+            "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip",
+            "extract_dir": "PCMaster"
+        }
+    },
+    "bin": [
+    ],
+    "shortcuts": [
+        [
+            "radar.exe",
+            "软媒系统雷达"
+        ],
+        [
+            "pcmaster.exe",
+            "软媒魔方"
+        ],
+        [
+            "boostmaster.exe",
+            "软媒优化大师"
+        ],
+        [
+            "cleanmaster.exe",
+            "软媒清理大师"
+        ]
+    ],
+    "checkver": {
+        "url": "https://mofang.ruanmei.com/",
+        "regex": "版本：([\\d.]+)正式版"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
+            }
+        }
+    }
+}
