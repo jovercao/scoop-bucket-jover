@@ -3,7 +3,7 @@
     "description": "Data management tool that enables work with SQL Server, Azure SQL DB and SQL DW.",
     "homepage": "https://docs.microsoft.com/en-us/sql/azure-data-studio",
     "license": "MIT",
-    "url": "https://github.com/Microsoft/azuredatastudio/releases/download/1.10.0/azuredatastudio-windows-1.10.0.zip",
+    "url": "https://azuredatastudiobuilds.blob.core.windows.net/releases/1.10.0/azuredatastudio-windows-1.10.0.zip",
     "hash": "367c914a375365783556fd59eff0a506e362a56900aeed1b2486b89bdd08400e",
     "extract_dir": "azuredatastudio-windows",
     "bin": "bin\\azuredatastudio.cmd",
@@ -13,14 +13,14 @@
     "shortcuts": [
         [
             "azuredatastudio.exe",
-            "--user-data-dir data",
-            "Azure Data Studio"
+            "Azure Data Studio",
+            "--user-data-dir data"
         ]
     ],
     "checkver": {
         "github": "https://github.com/Microsoft/azuredatastudio/"
     },
     "autoupdate": {
-        "url": "https://github.com/Microsoft/azuredatastudio/releases/download/$version/azuredatastudio-windows-$version.zip"
+        "url": "https://azuredatastudiobuilds.blob.core.windows.net/releases/$version/azuredatastudio-windows-$version.zip"
     }
 }
