@@ -5,7 +5,7 @@
     "license": "MIT",
     "url": "https://azuredatastudiobuilds.blob.core.windows.net/releases/1.14.1/azuredatastudio-windows-1.14.1.zip",
     "hash": "105baaea5c954f5341a3670b161bd50688e1f37c98559aa76d15b78d4f96c36f",
-    "extract_dir": "azuredatastudio-windows",
+    "extract_dir": ".",
     "bin": "bin\\azuredatastudio.cmd",
     "persist": "data",
     "shortcuts": [
