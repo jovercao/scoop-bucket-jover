@@ -19,7 +19,7 @@
     "shortcuts": [],
     "checkver": {
         "url": "https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html",
-        "regex": "instantclient-sqlplus-windows.x64-([\\d.]+[a-zA-Z]*)\\.zip"
+        "regex": "instantclient-sqlplus-windows.x64-(?<version>(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<build>\\d+)\\.(?<fix>\\d+)(?:\\.\\d+)?[a-zA-Z]*)\\.zip"
     },
     "env_add_path": [
         "."
@@ -27,10 +27,22 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.oracle.com/otn_software/nt/instantclient/19300/instantclient-sqlplus-nt-$version.zip"
+                "url": "https://download.oracle.com/otn_software/nt/instantclient/$matchMajor$matchMinor$matchBuild$matchFix/instantclient-sqlplus-nt-$version.zip",
+                "extract_dir": "instantclient_$matchMajor_$matchMinor",
+                "hash": {
+                    "url": "https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html",
+                    "xpath": "/html/body/div[3]/section[3]/div/div[2]/div/table/tbody/tr[1]/td[3]/p",
+                    "regex": "\\([\\d,]+\\s*bytes\\)\\s*\\(cksum\\s*-\\s*(\\d+)\\)"
+                }
             },
             "64bit": {
-                "url": "https://download.oracle.com/otn_software/nt/instantclient/19300/instantclient-sqlplus-windows.x64-$version.zip"
+                "url": "https://download.oracle.com/otn_software/nt/instantclient/$matchMajor$matchMinor$matchBuild$matchFix/instantclient-sqlplus-windows.x64-$version.zip",
+                "extract_dir": "instantclient_$matchMajor_$matchMinor",
+                "hash": {
+                    "url": "https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html",
+                    "xpath": "/html/body/div[3]/section[3]/div/div[2]/div/table/tbody/tr[1]/td[3]/p",
+                    "regex": "\\([\\d,]+\\s*bytes\\)\\s*\\(cksum\\s*-\\s*(\\d+)\\)"
+                }
             }
         }
     },

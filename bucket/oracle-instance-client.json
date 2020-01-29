@@ -17,7 +17,7 @@
     "shortcuts": [],
     "checkver": {
         "url": "https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html",
-        "regex": "instantclient-basic-windows.x64-([\\d.]+[a-zA-Z]*)\\.zip"
+        "regex": "instantclient-basic-windows.x64-(?<version>(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<build>\\d+)\\.(?<fix>\\d+)(?:\\.\\d+)?[a-zA-Z]*)\\.zip"
     },
     "env_set": {
         "ORACLE_HOME": "$dir",
@@ -30,10 +30,12 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://download.oracle.com/otn_software/nt/instantclient/19300/instantclient-basic-nt-$version.zip"
+                "url": "https://download.oracle.com/otn_software/nt/instantclient/$matchMajor$matchMinor$matchBuild$matchFix/instantclient-basic-nt-$version.zip",
+                "extract_dir": "instantclient_$matchMajor_$matchMinor"
             },
             "64bit": {
-                "url": "https://download.oracle.com/otn_software/nt/instantclient/19300/instantclient-basic-windows.x64-$version.zip"
+                "url": "https://download.oracle.com/otn_software/nt/instantclient/$matchMajor$matchMinor$matchBuild$matchFix/instantclient-basic-windows.x64-$version.zip",
+                "extract_dir": "instantclient_$matchMajor_$matchMinor"
             }
         }
     }
