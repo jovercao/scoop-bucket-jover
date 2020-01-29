@@ -3,18 +3,11 @@
     "version": "6.22",
     "license": "GPL",
     "description": "软媒魔方.",
+    "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.22_full.zip",
+    "extract_dir": "PCMaster",
     "hash": "a39ccc17434ff362e0c93efcc6367affe1d89b2246495b0ab59c8df80ea28c8d",
-    "architecture": {
-        "32bit": {
-            "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.22_full.zip",
-            "extract_dir": "PCMaster"
-        },
-        "64bit": {
-            "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.22_full.zip",
-            "extract_dir": "PCMaster"
-        }
-    },
     "bin": [
+        
     ],
     "shortcuts": [
         [
@@ -43,13 +36,6 @@
         "regex": "pcmaster_([\\d.]+)_full\\.zip"
     },
     "autoupdate": {
-        "architecture": {
-            "32bit": {
-                "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
-            },
-            "64bit": {
-                "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
-            }
-        }
+        "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
     }
 }
