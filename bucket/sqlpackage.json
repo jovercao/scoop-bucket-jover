@@ -1,0 +1,16 @@
+{
+    "homepage": "https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download?view=sql-server-2017",
+    "version": "18.4.1",
+    "license": "CLOSE",
+    "description": "VisualStudio SQLServer部署工具.",
+    "url": "https://go.microsoft.com/fwlink/?linkid=2113704#dl.zip",
+    "hash": "",
+    "bin": "SqlPackage.exe",
+    "checkver": {
+        "url": "https://docs.microsoft.com/en-us/sql/tools/sqlpackage-download?view=sql-server-2017",
+        "regex": "\\>\\s*(\\d+\\.\\d+\\.\\d+)\\s*\\<\\/"
+    },
+    "autoupdate": {
+        "url": "https://go.microsoft.com/fwlink/?linkid=2113704#dl.zip"
+    }
+}
