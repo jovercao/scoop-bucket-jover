@@ -1,0 +1,23 @@
+{
+    "homepage": "https://mofang.ruanmei.com",
+    "version": "6.23",
+    "license": "Unknown",
+    "description": "软媒魔方.",
+    "url": "https://d.ruanmei.com/mytime/pc/mytime_setup_1.23.exe",
+    "extract_dir": "PCMaster",
+    "hash": "071246e9daa4fbfdd1e3992569013ef2ff1bfc014fa93ad7a1847d01246e5c6a",
+    "bin": [],
+    "shortcuts": [
+        [
+            "mytime.exe",
+            "云日历"
+        ]
+    ],
+    "checkver": {
+        "url": "https://mytime.ruanmei.com/history",
+        "regex": "<h2>云日历 v([\\d.]+) - 2020年4月16日</h2>"
+    },
+    "autoupdate": {
+        "url": "https://d.ruanmei.com/mytime/pc/mytime_setup_$version.exe"
+    }
+}
