@@ -1,12 +1,14 @@
 {
     "homepage": "https://mofang.ruanmei.com",
-    "version": "6.23",
+    "version": "1.21",
     "license": "Unknown",
     "description": "软媒魔方.",
-    "url": "https://d.ruanmei.com/mytime/pc/mytime_setup_1.23.exe",
+    "url": "https://d.ruanmei.com/mytime/pc/mytime_setup_1.21.exe",
     "extract_dir": "PCMaster",
-    "hash": "071246e9daa4fbfdd1e3992569013ef2ff1bfc014fa93ad7a1847d01246e5c6a",
-    "bin": [],
+    "hash": "f60824cb477f40bfa30e8bdc229e8621dafc22502467fde9fbbeefb1f574b0e8",
+    "bin": [
+        
+    ],
     "shortcuts": [
         [
             "mytime.exe",
