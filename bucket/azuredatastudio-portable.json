@@ -1,13 +1,17 @@
 {
-    "version": "1.18.1",
+    "version": "1.21.0",
     "description": "Data management tool that enables work with SQL Server, Azure SQL DB and SQL DW.",
     "homepage": "https://docs.microsoft.com/en-us/sql/azure-data-studio",
     "license": "MIT",
-    "url": "https://azuredatastudiobuilds.blob.core.windows.net/releases/1.18.1/azuredatastudio-windows-1.18.1.zip",
-    "hash": "716bf17dc8f7ba93a7daf0aa621b2bbda553a432b06b95e0abcde5f437d5b923",
-    "extract_dir": "",
     "bin": "bin/azuredatastudio.cmd",
     "persist": "data",
+    "architecture": {
+        "64bit": {
+            "url": "https://sqlopsbuilds.azureedge.net/stable/2413919f186f780f0193d047da3d90bb3c1e9bf6/azuredatastudio-windows-1.21.0.zip",
+            "hash": "282bffd23e3e5f32b1475b18cd52cac0e026d1845971d91fe324f301c3d59ee2"
+        }
+    },
+    "hash": "",
     "shortcuts": [
         [
             "azuredatastudio.exe",
@@ -16,9 +20,14 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/Microsoft/azuredatastudio/"
+        "github": "https://github.com/Microsoft/azuredatastudio/",
+        "regex": "(?sm)studio/tree/([\\d.]+)\".*?/commit/(?<commit>\\w+)\""
     },
     "autoupdate": {
-        "url": "https://azuredatastudiobuilds.blob.core.windows.net/releases/$version/azuredatastudio-windows-$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://sqlopsbuilds.azureedge.net/stable/$matchCommit/azuredatastudio-windows-$version.zip"
+            }
+        }
     }
 }
