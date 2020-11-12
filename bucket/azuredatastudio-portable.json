@@ -1,5 +1,5 @@
 {
-    "version": "1.21.0",
+    "version": "1.23.0",
     "description": "Data management tool that enables work with SQL Server, Azure SQL DB and SQL DW.",
     "homepage": "https://docs.microsoft.com/en-us/sql/azure-data-studio",
     "license": "MIT",
@@ -7,8 +7,8 @@
     "persist": "data",
     "architecture": {
         "64bit": {
-            "url": "https://sqlopsbuilds.azureedge.net/stable/2413919f186f780f0193d047da3d90bb3c1e9bf6/azuredatastudio-windows-1.21.0.zip",
-            "hash": "282bffd23e3e5f32b1475b18cd52cac0e026d1845971d91fe324f301c3d59ee2"
+            "url": "https://sqlopsbuilds.azureedge.net/stable/d296b6397e0acfddc57e9085e736e084969cdaeb/azuredatastudio-windows-1.23.0.zip",
+            "hash": "7161a9fe5a429e538966012bdc2f4e9e9ae71a46124b294ef428ef10cab640c2"
         }
     },
     "hash": "",
