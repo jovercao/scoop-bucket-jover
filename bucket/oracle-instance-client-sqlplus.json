@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html",
-        "regex": "instantclient-sqlplus-windows.x64-([\\d.]+[a-zA-Z]*)\\.zip"
+        "regex": "<h4>Version *(\\d+.\\d+.\\d+.\\d+)(?<last>.+)</h4>"
     },
     "env_add_path": ".",
     "autoupdate": {
