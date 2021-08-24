@@ -16,7 +16,7 @@
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
             },
-            "hash": "sha512:9ec6e81cbb9392780a796f4fdc8ab62f4166cd47041cf42aa2d5038c252ebacd355ac8959bd3c58fdf3105b05bcf5fc14f7ef5cb8c2ed7f518797be4bd2e0e6c"
+            "hash": "sha512:6f062225928e860969f2ee3e0fb621962e263c9f21afd518a58bdb2d2bd1f32e759a3fb50fb535d2c077fb338eca0e943a7de16498adac9a32e48fe7c35532a9"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall uTools.exe\" -Force -Recurse",
